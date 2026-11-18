@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Rowad International Schools | Quarter 2 Quiz Guidelines</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Crisp Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        rowad: {
+                            navy: '#0F2942',
+                            blue: '#1E4E79',
+                            teal: '#0D9488',
+                            gold: '#D97706',
+                            light: '#F8FAFC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle animations and scrollbar */
+        body {
+            background-color: #F1F5F9;
+            color: #1E293B;
+        }
+        .tab-active {
+            background-color: #0F2942;
+            color: #FFFFFF;
+            box-shadow: 0 4px 6px -1px rgba(15, 41, 66, 0.2);
+        }
+        .card-hover {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 20px -8px rgba(15, 41, 66, 0.12);
+        }
+        /* Custom checkbox styling */
+        .custom-checkbox:checked + div {
+            background-color: #F0FDF4;
+            border-color: #22C55E;
+        }
+        .custom-checkbox:checked + div .check-text {
+            text-decoration: line-through;
+            color: #64748B;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: white; }
+            .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl { box-shadow: none !important; border: 1px solid #E2E8F0; }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-rowad-blue selection:text-white">
+
+    <!-- Top Sticky Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-rowad-navy to-rowad-blue flex items-center justify-center text-white font-display font-bold text-lg shadow-sm">
+                        AR
+                    </div>
+                    <div>
+                        <span class="font-display font-bold text-rowad-navy text-sm sm:text-base block leading-tight">AL-ROWAD INTERNATIONAL SCHOOLS</span>
+                        <span class="text-xs font-medium text-slate-500">English Department • Quarter 2 Assessment Hub</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#overview" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-rowad-navy hover:bg-slate-100 transition">At a Glance</a>
+                    <a href="#weighting" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-rowad-navy hover:bg-slate-100 transition">Weighting</a>
+                    <a href="#curriculum" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-rowad-navy hover:bg-slate-100 transition">Material Covered</a>
+                    <a href="#standards" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-rowad-navy hover:bg-slate-100 transition">Writing Rules</a>
+                    <a href="#workflow" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-rowad-navy hover:bg-slate-100 transition">Checklist & Workflow</a>
+                </div>
+
+                <button onclick="window.print()" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs sm:text-sm font-semibold transition cursor-pointer">
+                    <i class="fa-solid fa-print"></i>
+                    <span class="hidden sm:inline">Print Guide</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative overflow-hidden bg-gradient-to-br from-rowad-navy via-rowad-blue to-slate-900 text-white py-12 sm:py-16">
+        <!-- Decorative Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+                <div class="max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 border border-white/20 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-4">
+                        <i class="fa-solid fa-sparkles"></i> Semester 1 • Grades 4–12 (US & UK/IGCSE)
+                    </div>
+                    <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-4">
+                        Quarter 2 Quiz Preparation Guidelines
+                    </h1>
+                    <p class="text-slate-200 text-base sm:text-lg leading-relaxed">
+                        Your centralized, step-by-step reference for assessment weighting, covered curriculum topics, question formatting standards, and submission milestones.
+                    </p>
+                </div>
+
+                <!-- Quick Key Dates Card -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 lg:w-96 shadow-xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-amber-300">
+                            <i class="fa-regular fa-calendar-check text-xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-display font-bold text-white text-base">Key Timeline</h2>
+                            <p class="text-xs text-slate-300">Director's Academic Schedule</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-dot text-teal-400 mt-1 text-xs"></i>
+                            <div>
+                                <span class="font-semibold text-white">Quiz Administration:</span>
+                                <span class="text-slate-200 block text-xs">Weeks 16 and 17</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-dot text-amber-400 mt-1 text-xs"></i>
+                            <div>
+                                <span class="font-semibold text-white">Core Curriculum Scope:</span>
+                                <span class="text-slate-200 block text-xs">Mainly Weeks 12 and 13 material</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-circle-dot text-rose-400 mt-1 text-xs"></i>
+                            <div>
+                                <span class="font-semibold text-white">Schoology Student Revision:</span>
+                                <span class="text-slate-200 block text-xs">Upload before the break starts</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-14">
+
+        <!-- SECTION 1: QUIZ AT A GLANCE -->
+        <section id="overview" class="scroll-mt-24">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-2">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-rowad-teal">Section 01</span>
+                    <h2 class="font-display text-2xl sm:text-3xl font-bold text-rowad-navy">Quiz Specifications at a Glance</h2>
+                </div>
+                <p class="text-sm text-slate-500">Compare structure across US Program and UK/IGCSE Streams</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- Card 1: Target Grades -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm card-hover">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-rowad-blue flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-users-rectangle"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-slate-900 text-lg mb-2">Target Streams</h3>
+                    <div class="space-y-2 text-sm text-slate-600">
+                        <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                            <span class="font-semibold text-rowad-navy block">US Program</span>
+                            Grades 4–8 & Grades 9–12 SAT
+                        </div>
+                        <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                            <span class="font-semibold text-rowad-teal block">UK / IGCSE Stream</span>
+                            Grades 9 & 10 IGCSE, 11AS & 12A2
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Total Marks -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm card-hover">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-slate-900 text-lg mb-2">Total Quiz Mark</h3>
+                    <div class="space-y-2 text-sm text-slate-600">
+                        <div class="p-2.5 rounded-xl bg-emerald-50/50 border border-emerald-100 flex justify-between items-center">
+                            <span class="font-medium text-slate-800">Grades 4–12 (US)</span>
+                            <span class="font-display font-extrabold text-emerald-700 text-base">6 Marks</span>
+                        </div>
+                        <div class="p-2.5 rounded-xl bg-teal-50/50 border border-teal-100 flex justify-between items-center">
+                            <span class="font-medium text-slate-800">Grades 9–12 (UK)</span>
+                            <span class="font-display font-extrabold text-teal-700 text-base">10 Marks</span>
+                        </div>
+                        <p class="text-xs text-slate-500 pt-1 italic">*Counts directly toward the Quarter 2 final grade (out of 30).</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Question Count -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm card-hover">
+                    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-list-ol"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-slate-900 text-lg mb-2">Number of Questions</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+                            <span>Grades 4–12 (US)</span>
+                            <span class="font-bold text-rowad-navy">18 Questions</span>
+                        </li>
+                        <li class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+                            <span>Grades 11AS & 12A2</span>
+                            <span class="font-bold text-rowad-navy">20 Questions</span>
+                        </li>
+                        <li class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+                            <span>Grades 9 & 10 IGCSE</span>
+                            <span class="font-bold text-rowad-teal">Past Paper Based</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 4: Question Formats -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm card-hover">
+                    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-slate-900 text-lg mb-2">Approved Formats</h3>
+                    <div class="text-sm text-slate-600 space-y-2">
+                        <p class="font-semibold text-xs uppercase tracking-wider text-slate-400">US Program (G4–12):</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 rounded-md bg-purple-50 text-purple-800 text-xs font-medium">MCQs</span>
+                            <span class="px-2.5 py-1 rounded-md bg-purple-50 text-purple-800 text-xs font-medium">Fill in the Blanks</span>
+                            <span class="px-2.5 py-1 rounded-md bg-purple-50 text-purple-800 text-xs font-medium">Matching</span>
+                            <span class="px-2.5 py-1 rounded-md bg-purple-50 text-purple-800 text-xs font-medium">True / False</span>
+                        </div>
+                        <p class="font-semibold text-xs uppercase tracking-wider text-slate-400 pt-1">IGCSE (G9–10):</p>
+                        <p class="text-xs bg-slate-50 p-2 rounded-lg border border-slate-100">Aligned directly with Cambridge Past Paper exercises.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: QUARTER 2 ASSESSMENT WEIGHTING -->
+        <section id="weighting" class="scroll-mt-24">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-rowad-teal">Section 02</span>
+                        <h2 class="font-display text-2xl font-bold text-rowad-navy">Quarters 2 & 4 Assessment Weighting</h2>
+                        <p class="text-sm text-slate-500 mt-1">How the Quarter 2 Quiz contributes to the overall 30.0-point Quarter Total.</p>
+                    </div>
+                    
+                    <!-- Interactive Toggle Switcher -->
+                    <div class="inline-flex p-1 rounded-xl bg-slate-100 border border-slate-200 self-start">
+                        <button id="btn-compare" onclick="setWeightView('both')" class="px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition tab-active cursor-pointer">
+                            Compare Both Streams
+                        </button>
+                        <button id="btn-us" onclick="setWeightView('us')" class="px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold text-slate-600 hover:text-rowad-navy transition cursor-pointer">
+                            US Stream (G4–12)
+                        </button>
+                        <button id="btn-uk" onclick="setWeightView('uk')" class="px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold text-slate-600 hover:text-rowad-navy transition cursor-pointer">
+                            UK Stream (G9–12)
+                        </button>
+                    </div>
+                </div>
+
+                <div id="weight-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-6">
+                    <!-- US Stream Weighting Card -->
+                    <div id="card-weight-us" class="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50/40">
+                        <div class="bg-rowad-navy text-white px-6 py-4 flex justify-between items-center">
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-blue-200 font-semibold">US Program</span>
+                                <h3 class="font-display font-bold text-lg">Grades 4–12 (US Stream)</h3>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-white/15 text-xs font-bold">Total: 30.0</span>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <!-- Visual Stacked Progress Bar -->
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold text-slate-500 mb-1.5">
+                                    <span>Grade Distribution</span>
+                                    <span>Quiz = 20% of Quarter Grade</span>
+                                </div>
+                                <div class="h-3.5 w-full rounded-full bg-slate-200 overflow-hidden flex">
+                                    <div style="width: 20%" class="bg-sky-500" title="Classwork: 6.0"></div>
+                                    <div style="width: 10%" class="bg-indigo-400" title="Homework: 3.0"></div>
+                                    <div style="width: 20%" class="bg-amber-500" title="Quiz: 6.0"></div>
+                                    <div style="width: 16.67%" class="bg-purple-500" title="Project (PBL): 5.0"></div>
+                                    <div style="width: 33.33%" class="bg-rowad-navy" title="Final Examination: 10.0"></div>
+                                </div>
+                            </div>
+
+                            <!-- Breakdown Table -->
+                            <div class="divide-y divide-slate-200/80 border border-slate-200 rounded-xl bg-white overflow-hidden text-sm">
+                                <div class="flex justify-between px-4 py-3">
+                                    <span class="flex items-center gap-2 text-slate-700"><span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>Classwork</span>
+                                    <span class="font-bold text-slate-900">6.0</span>
+                                </div>
+                                <div class="flex justify-between px-4 py-3">
+                                    <span class="flex items-center gap-2 text-slate-700"><span class="w-2.5 h-2.5 rounded-full bg-indigo-400"></span>Homework</span>
+                                    <span class="font-bold text-slate-900">3.0</span>
+                                </div>
+                                <div class="flex justify-between px-4 py-3 bg-amber-50/80">
+                                    <span class="flex items-center gap-2 font-bold text-amber-900"><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>Quiz (Quarter 2 Focus)</span>
+                                    <span class="font-extrabold text-amber-700">6.0</span>
+                                </div>
+                                <div class="flex justify-between px-4 py-3">
+                                    <span class="flex items-center gap-2 text-slate-700"><span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>Project (PBL)</span>
+                                    <span class="font-bold text-slate-900">5.0</span>
+                                </div>
+                                <div class="flex justify-between px-4 py-3">
+                                    <span class="flex items-center gap-2 text-slate-700"><span class="w-2.5 h-2.5 rounded-full bg-rowad-navy"></span>Final Examination</span>
+                                    <span class="font-bold text-slate-900">10.0</span>
+                                </div>
+                                <div class="flex justify-between px-4 py-3 bg-slate-100 font-bold text-rowad-navy">
+                                    <span>Quarter Total</span>
+                                    <span>30.0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UK Stream Weighting Card -->
+                    <div id="card-weight-uk" class="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50/40">
+                        <div class="bg-rowad-teal text-white px-6 py-4 flex justify-between items-center">
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-teal-100 font-semibold">UK / IGCSE Program</span>
+                                <h3 class="font-display font-bold text-lg">Grades 9–12 (UK Stream)</h3>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-white/15 text-xs font-bold">Total: 30.0</span>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <!-- Visual Stacked Progress Bar -->
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold text-slate-500 mb-1.5">
+                                    <span>Grade Distribution</span>
+                                    <span>Quiz = 33.3% of Quarter Grade</span>
+                                </div>
+                                <div class="h-3.5 w-full rounded-full bg-slate-200 overflow-hidden flex">
+                                    <div style="width: 20%" class="bg-sky-500" title="Classwork: 6.0"></div>
+                                    <div style="width: 13.33%" class="bg-indigo-400" title="Homework: 4.0"></div>
+                                    <div style="width: 33.33%" class="bg-amber-500" title="Quiz: 10.0"></div>
+                                    <div style="width: 33.33%" class="bg-rowad-teal" title="Final Examination: 10.0"></div>
+                                </div>
+                            </div>
+
+                            <!-- Breakdown Table -->
+                            <div class="divide-y divide-slate-200/80 border border-slate-200 rounded-xl bg-white overflow-hidden text-sm">
+                                <div class="flex justify-between px-4 py-3">
+                                    <span class="flex items-center gap-2 text-slate-700"><span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>Classwork</span>
+                                    <span class="font-bold text-slate-900">6.0</span>
+                                </div>
+                                <div class="flex justify-between px-4 py-3">
+                                    <span class="flex items-center gap-2 text-slate-700"><span class="w-2.5 h-2.5 rounded-full bg-indigo-400"></span>Homework</span>
+                                    <span class="font-bold text-slate-900">4.0</span>
+                                </div>
+                                <div class="flex justify-between px-4 py-3 bg-amber-50/80">
+                                    <span class="flex items-center gap-2 font-bold text-amber-900"><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>Quiz (Quarter 2 Focus)</span>
+                                    <span class="font-extrabold text-amber-700">10.0</span>
+                                </div>
+                                <div class="flex justify-between px-4 py-3 text-slate-400 italic">
+                                    <span>Project (PBL)</span>
+                                    <span>N/A</span>
+                                </div>
+                                <div class="flex justify-between px-4 py-3">
+                                    <span class="flex items-center gap-2 text-slate-700"><span class="w-2.5 h-2.5 rounded-full bg-rowad-teal"></span>Final Examination</span>
+                                    <span class="font-bold text-slate-900">10.0</span>
+                                </div>
+                                <div class="flex justify-between px-4 py-3 bg-slate-100 font-bold text-rowad-navy">
+                                    <span>Quarter Total</span>
+                                    <span>30.0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: INTERACTIVE MATERIAL COVERED BY GRADE -->
+        <section id="curriculum" class="scroll-mt-24">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-6">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-rowad-teal">Section 03</span>
+                    <h2 class="font-display text-2xl sm:text-3xl font-bold text-rowad-navy">Material Covered by Grade</h2>
+                    <p class="text-sm text-slate-600 mt-1">Filter by division or search your grade/topic. Based mainly on <strong class="text-rowad-navy">Weeks 12 & 13</strong> instruction.</p>
+                </div>
+
+                <!-- Search & Filter Controls -->
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <div class="relative">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                        <input type="text" id="grade-search" onkeyup="filterGrades()" placeholder="Search grade, story, grammar..." 
+                            class="w-full sm:w-64 pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-rowad-blue focus:border-transparent shadow-sm">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Pills -->
+            <div class="flex flex-wrap gap-2 mb-6 no-print">
+                <button onclick="setDivisionFilter('all')" data-filter="all" class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-rowad-navy text-white shadow-sm transition cursor-pointer">
+                    All Grades (12)
+                </button>
+                <button onclick="setDivisionFilter('elementary')" data-filter="elementary" class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition cursor-pointer">
+                    Elementary (Grades 4–5)
+                </button>
+                <button onclick="setDivisionFilter('middle')" data-filter="middle" class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition cursor-pointer">
+                    Middle School (Grades 6–8)
+                </button>
+                <button onclick="setDivisionFilter('high-us')" data-filter="high-us" class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition cursor-pointer">
+                    High School US / SAT (Grades 9–12)
+                </button>
+                <button onclick="setDivisionFilter('igcse')" data-filter="igcse" class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition cursor-pointer">
+                    UK / IGCSE & A-Level (Grades 9–12)
+                </button>
+            </div>
+
+            <!-- Grade Cards Grid -->
+            <div id="grades-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Populated dynamically via JavaScript for clean filtering & copy functionality -->
+            </div>
+
+            <!-- Empty State for Search -->
+            <div id="empty-search" class="hidden bg-white rounded-2xl p-10 text-center border border-slate-200">
+                <i class="fa-regular fa-folder-open text-4xl text-slate-300 mb-3"></i>
+                <h3 class="font-display font-bold text-slate-700 text-lg">No matching grades or topics found</h3>
+                <p class="text-sm text-slate-500 mt-1">Try clearing your search box or selecting "All Grades".</p>
+                <button onclick="resetFilters()" class="mt-4 px-4 py-2 rounded-xl bg-rowad-blue text-white text-sm font-semibold hover:bg-rowad-navy transition cursor-pointer">
+                    Reset Filters
+                </button>
+            </div>
+        </section>
+
+        <!-- SECTION 4: TEST WRITING & FORMATTING STANDARDS -->
+        <section id="standards" class="scroll-mt-24">
+            <div class="mb-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-rowad-teal">Section 04</span>
+                <h2 class="font-display text-2xl sm:text-3xl font-bold text-rowad-navy">English Department Test Writing Standards</h2>
+                <p class="text-sm text-slate-600 mt-1">Mandatory formatting and pedagogical rules to ensure clarity, fairness, and rigor across all quizzes.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Rule 1.1: Section Headings & Numbering -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-rowad-navy text-white font-display font-bold text-sm">Rule 1.1</span>
+                            <h3 class="font-display font-bold text-lg text-slate-900">Section Headings & Continuous Numbering</h3>
+                        </div>
+                        <ul class="space-y-2.5 text-sm text-slate-600 mb-5">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                                <span>Include a clear heading with the <strong>section letter, question type, and marks</strong>.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                                <span>Write a <strong>short, simple instruction</strong> directly under every heading.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                                <span>Number all questions <strong>continuously from 1 to 18</strong> (or 1 to 20 for 11AS/12A2)—do not restart numbering at 1 in new sections.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Visual Example Box -->
+                    <div class="rounded-xl bg-slate-50 border border-slate-200 p-4">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1.5">Compliant Heading Example</span>
+                        <div class="font-serif text-slate-900 border-l-4 border-rowad-blue pl-3 py-1 bg-white rounded-r-lg">
+                            <p class="font-bold text-sm">Section A – Literature (Multiple Choice) [2 Marks]</p>
+                            <p class="text-xs italic text-slate-600 mt-0.5">Choose the correct answer for each of the following questions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rule 1.2: Key Words Bold & Underlined -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-rowad-navy text-white font-display font-bold text-sm">Rule 1.2</span>
+                            <h3 class="font-display font-bold text-lg text-slate-900">Key Words: Bold & Underlined</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-5 leading-relaxed">
+                            In <strong>every question</strong>, the critical focus word(s) or negative qualifiers that guide student comprehension must be both <strong><u>bold and underlined</u></strong>.
+                        </p>
+                    </div>
+                    <!-- Visual Examples Box -->
+                    <div class="rounded-xl bg-slate-50 border border-slate-200 p-4 space-y-2.5">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">Approved Question Prompts</span>
+                        <div class="p-2.5 bg-white rounded-lg border border-slate-200/80 text-sm text-slate-800">
+                            1. Which sentence is <strong class="underline text-rowad-navy">NOT</strong> a fragment?
+                        </div>
+                        <div class="p-2.5 bg-white rounded-lg border border-slate-200/80 text-sm text-slate-800">
+                            2. Find the <strong class="underline text-rowad-navy">adverb clause</strong> in the sentence below.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rule 1.3: Vocabulary & Grammar Usage -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-rowad-teal text-white font-display font-bold text-sm">Rule 1.3</span>
+                            <h3 class="font-display font-bold text-lg text-slate-900">Vocabulary & Grammar: Test Usage, Not Definitions</h3>
+                        </div>
+                        <ul class="space-y-2.5 text-sm text-slate-600 mb-5">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                                <span>Vary question types across vocabulary and grammar (avoid repeating the exact same item format).</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                                <span>Focus on <strong>application in context</strong>—students must apply the word or grammatical rule inside a meaningful sentence.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Do vs Don't Comparison -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                        <div class="p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-900">
+                            <span class="font-bold flex items-center gap-1.5 text-rose-700 mb-1">
+                                <i class="fa-solid fa-circle-xmark"></i> AVOID (Rote Recall)
+                            </span>
+                            "What is the definition of an adjective clause?"
+                        </div>
+                        <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900">
+                            <span class="font-bold flex items-center gap-1.5 text-emerald-700 mb-1">
+                                <i class="fa-solid fa-circle-check"></i> DO THIS (Contextual)
+                            </span>
+                            "Choose the sentence that <strong class="underline">correctly</strong> uses an <strong class="underline">adjective clause</strong>."
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rule 1.4: General Quality Checks -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-rowad-teal text-white font-display font-bold text-sm">Rule 1.4</span>
+                            <h3 class="font-display font-bold text-lg text-slate-900">General Quality & Accuracy Checks</h3>
+                        </div>
+                        <div class="space-y-3 text-sm text-slate-600">
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-blue-100 text-rowad-blue flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800">Grade-Appropriate Language</h4>
+                                    <p class="text-xs text-slate-600 mt-0.5">Ensure sentence complexity, passage length, and vocabulary match the cognitive level of your grade.</p>
+                                </div>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-key"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800">Unambiguous Answers & Complete Key</h4>
+                                    <p class="text-xs text-slate-600 mt-0.5">Verify that there is <strong>strictly one correct answer</strong> per item and prepare a full Answer Key alongside every quiz.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: SUBMISSION WORKFLOW & INTERACTIVE TEACHER CHECKLIST -->
+        <section id="workflow" class="scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Left Column: 4-Step Submission Workflow (5 cols) -->
+                <div class="lg:col-span-5 bg-rowad-navy text-white rounded-3xl p-6 sm:p-8 shadow-lg flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-300">Section 05 • Rule 1.5</span>
+                        <h2 class="font-display text-2xl font-bold mt-1 mb-2">Submission Workflow</h2>
+                        <p class="text-sm text-slate-300 mb-6">Follow these four steps in sequence before administering the quiz in Weeks 16–17.</p>
+
+                        <div class="relative space-y-6 before:absolute before:inset-0 before:ml-4 before:-translate-x-px before:h-full before:w-0.5 before:bg-white/20">
+                            <!-- Step 1 -->
+                            <div class="relative flex items-start gap-4">
+                                <div class="w-8 h-8 rounded-full bg-amber-500 text-rowad-navy font-display font-extrabold text-sm flex items-center justify-center shrink-0 z-10 shadow">
+                                    1
+                                </div>
+                                <div class="bg-white/10 border border-white/15 rounded-2xl p-4 flex-1">
+                                    <h3 class="font-bold text-white text-sm">Draft Quiz & Answer Key</h3>
+                                    <p class="text-xs text-slate-300 mt-1">Write the quiz and complete answer key adhering strictly to the covered Weeks 12–13 material and formatting rules.</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="relative flex items-start gap-4">
+                                <div class="w-8 h-8 rounded-full bg-teal-400 text-rowad-navy font-display font-extrabold text-sm flex items-center justify-center shrink-0 z-10 shadow">
+                                    2
+                                </div>
+                                <div class="bg-white/10 border border-white/15 rounded-2xl p-4 flex-1">
+                                    <h3 class="font-bold text-white text-sm">Upload to Google Drive</h3>
+                                    <p class="text-xs text-slate-300 mt-1">Upload both the Quiz file and the Answer Key to the English Department shared Drive folder for HOD review.</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="relative flex items-start gap-4">
+                                <div class="w-8 h-8 rounded-full bg-sky-400 text-rowad-navy font-display font-extrabold text-sm flex items-center justify-center shrink-0 z-10 shadow">
+                                    3
+                                </div>
+                                <div class="bg-white/10 border border-white/15 rounded-2xl p-4 flex-1">
+                                    <h3 class="font-bold text-white text-sm">Apply Review Corrections</h3>
+                                    <p class="text-xs text-slate-300 mt-1">Promptly implement any edits or feedback requested after the departmental review.</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="relative flex items-start gap-4">
+                                <div class="w-8 h-8 rounded-full bg-emerald-400 text-rowad-navy font-display font-extrabold text-sm flex items-center justify-center shrink-0 z-10 shadow">
+                                    4
+                                </div>
+                                <div class="bg-white/10 border border-white/15 rounded-2xl p-4 flex-1">
+                                    <h3 class="font-bold text-white text-sm">Publish Revision on Schoology</h3>
+                                    <p class="text-xs text-slate-300 mt-1">Upload the quiz revision material to Schoology <strong>before the break starts</strong> so students can prepare.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-5 border-t border-white/15 flex items-center gap-3 text-xs text-amber-200">
+                        <i class="fa-solid fa-bell text-base"></i>
+                        <span>Reminder: Schoology revision materials must go live prior to the break!</span>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Self-Audit Checklist (7 cols) -->
+                <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-rowad-teal">Interactive Pre-Flight Audit</span>
+                                <h2 class="font-display text-2xl font-bold text-rowad-navy">Teacher Readiness Checklist</h2>
+                            </div>
+                            <button onclick="resetChecklist()" class="self-start sm:self-auto px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-500 hover:text-rowad-navy hover:bg-slate-100 transition cursor-pointer">
+                                <i class="fa-solid fa-rotate-left mr-1"></i> Reset
+                            </button>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="mb-6 bg-slate-50 p-4 rounded-2xl border border-slate-200/70">
+                            <div class="flex justify-between items-center text-sm font-bold mb-2">
+                                <span class="text-slate-700">Submission Readiness</span>
+                                <span id="checklist-percent" class="text-rowad-teal">0% (0/8)</span>
+                            </div>
+                            <div class="w-full h-3 bg-slate-200 rounded-full overflow-hidden">
+                                <div id="checklist-bar" class="h-full bg-gradient-to-r from-rowad-blue to-rowad-teal transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Checklist Items -->
+                        <div class="space-y-2.5" id="checklist-items">
+                            <label class="block cursor-pointer select-none">
+                                <input type="checkbox" class="sr-only custom-checkbox" onchange="updateChecklist()">
+                                <div class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 transition flex items-center gap-3">
+                                    <span class="w-5 h-5 rounded-md border-2 border-slate-300 flex items-center justify-center text-emerald-600 shrink-0">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </span>
+                                    <span class="check-text text-sm text-slate-700 font-medium">Questions focus mainly on <strong>Weeks 12 and 13</strong> covered material for my grade.</span>
+                                </div>
+                            </label>
+
+                            <label class="block cursor-pointer select-none">
+                                <input type="checkbox" class="sr-only custom-checkbox" onchange="updateChecklist()">
+                                <div class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 transition flex items-center gap-3">
+                                    <span class="w-5 h-5 rounded-md border-2 border-slate-300 flex items-center justify-center text-emerald-600 shrink-0">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </span>
+                                    <span class="check-text text-sm text-slate-700 font-medium">Total marks and question count match my stream (<strong>6 marks / 18 Qs</strong> for US; <strong>10 marks / 20 Qs or Past Paper</strong> for UK).</span>
+                                </div>
+                            </label>
+
+                            <label class="block cursor-pointer select-none">
+                                <input type="checkbox" class="sr-only custom-checkbox" onchange="updateChecklist()">
+                                <div class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 transition flex items-center gap-3">
+                                    <span class="w-5 h-5 rounded-md border-2 border-slate-300 flex items-center justify-center text-emerald-600 shrink-0">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </span>
+                                    <span class="check-text text-sm text-slate-700 font-medium">Every section includes a <strong>letter, question type, mark allocation, and short instruction</strong>.</span>
+                                </div>
+                            </label>
+
+                            <label class="block cursor-pointer select-none">
+                                <input type="checkbox" class="sr-only custom-checkbox" onchange="updateChecklist()">
+                                <div class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 transition flex items-center gap-3">
+                                    <span class="w-5 h-5 rounded-md border-2 border-slate-300 flex items-center justify-center text-emerald-600 shrink-0">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </span>
+                                    <span class="check-text text-sm text-slate-700 font-medium">Questions are numbered <strong>continuously</strong> (e.g., 1 to 18) from start to finish.</span>
+                                </div>
+                            </label>
+
+                            <label class="block cursor-pointer select-none">
+                                <input type="checkbox" class="sr-only custom-checkbox" onchange="updateChecklist()">
+                                <div class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 transition flex items-center gap-3">
+                                    <span class="w-5 h-5 rounded-md border-2 border-slate-300 flex items-center justify-center text-emerald-600 shrink-0">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </span>
+                                    <span class="check-text text-sm text-slate-700 font-medium">All focus key words in every question are <strong><u>bold and underlined</u></strong>.</span>
+                                </div>
+                            </label>
+
+                            <label class="block cursor-pointer select-none">
+                                <input type="checkbox" class="sr-only custom-checkbox" onchange="updateChecklist()">
+                                <div class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 transition flex items-center gap-3">
+                                    <span class="w-5 h-5 rounded-md border-2 border-slate-300 flex items-center justify-center text-emerald-600 shrink-0">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </span>
+                                    <span class="check-text text-sm text-slate-700 font-medium">Vocabulary & grammar items test <strong>contextual usage</strong> (no rote definitions) with varied formats.</span>
+                                </div>
+                            </label>
+
+                            <label class="block cursor-pointer select-none">
+                                <input type="checkbox" class="sr-only custom-checkbox" onchange="updateChecklist()">
+                                <div class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 transition flex items-center gap-3">
+                                    <span class="w-5 h-5 rounded-md border-2 border-slate-300 flex items-center justify-center text-emerald-600 shrink-0">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </span>
+                                    <span class="check-text text-sm text-slate-700 font-medium">Complete <strong>Answer Key</strong> is prepared and verified (strictly one correct answer per item).</span>
+                                </div>
+                            </label>
+
+                            <label class="block cursor-pointer select-none">
+                                <input type="checkbox" class="sr-only custom-checkbox" onchange="updateChecklist()">
+                                <div class="p-3.5 rounded-xl border border-slate-200 hover:border-slate-300 transition flex items-center gap-3">
+                                    <span class="w-5 h-5 rounded-md border-2 border-slate-300 flex items-center justify-center text-emerald-600 shrink-0">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </span>
+                                    <span class="check-text text-sm text-slate-700 font-medium">Uploaded to <strong>Drive for review</strong>, and revision materials queued for <strong>Schoology</strong> before break.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Completion Banner -->
+                    <div id="ready-banner" class="hidden mt-5 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0 text-lg">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-display font-bold text-sm">All Checks Passed!</h4>
+                            <p class="text-xs text-emerald-800">Your Quarter 2 Quiz meets all Al-Rowad English Department standards and is ready for upload.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 mt-16 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+            <div class="flex items-center gap-2 font-semibold text-rowad-navy">
+                <span>AL-ROWAD INTERNATIONAL SCHOOLS</span>
+                <span>•</span>
+                <span>English Department</span>
+            </div>
+            <p>Quarter 2 Quiz Guidelines • Grades 4–12 (US Program & UK/IGCSE Stream)</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification for Copy Action -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-rowad-navy text-white px-4 py-3 rounded-xl shadow-xl flex items-center gap-2.5 text-sm font-medium">
+        <i class="fa-solid fa-clipboard-check text-teal-400"></i>
+        <span id="toast-msg">Copied grade syllabus to clipboard!</span>
+    </div>
+
+    <script>
+        // Curriculum Data accurately structured from "Quarter 2 Quiz Material Covered.pdf"
+        const gradeCurriculum = [
+            {
+                grade: "Grade 4",
+                stream: "US Program",
+                division: "elementary",
+                marks: "6 Marks • 18 Qs",
+                badgeColor: "bg-sky-100 text-sky-800",
+                topics: [
+                    { category: "Reading", detail: "Vocabulary & comprehension skill – The Ant and the Grasshopper, pp. 152–161" },
+                    { category: "Spelling", detail: "Words with silent letters – CW PB pp. 139–142" }
+                ]
+            },
+            {
+                grade: "Grade 5",
+                stream: "US Program",
+                division: "elementary",
+                marks: "6 Marks • 18 Qs",
+                badgeColor: "bg-sky-100 text-sky-800",
+                topics: [
+                    { category: "Grammar", detail: "Action Verbs – pp. 121–123; H.W. p. 125" },
+                    { category: "Spelling", detail: "Open Syllables (V/V) – pp. 169, 172, 173; H.W. p. 174" }
+                ]
+            },
+            {
+                grade: "Grade 6",
+                stream: "US Program",
+                division: "middle",
+                marks: "6 Marks • 18 Qs",
+                badgeColor: "bg-indigo-100 text-indigo-800",
+                topics: [
+                    { category: "Literature", detail: "Bullying in Schools (Argumentative Text) – pp. 110–120" },
+                    { category: "Spelling", detail: "13.94 Often Misspelled Words – p. 285" }
+                ]
+            },
+            {
+                grade: "Grade 7",
+                stream: "US Program",
+                division: "middle",
+                marks: "6 Marks • 18 Qs",
+                badgeColor: "bg-indigo-100 text-indigo-800",
+                topics: [
+                    { category: "Literature", detail: "The Importance of Mindset" },
+                    { category: "Vocabulary", detail: "Unit 6" }
+                ]
+            },
+            {
+                grade: "Grade 8",
+                stream: "US Program",
+                division: "middle",
+                marks: "6 Marks • 18 Qs",
+                badgeColor: "bg-indigo-100 text-indigo-800",
+                topics: [
+                    { category: "Literature", detail: "Commencement Address to the Santa Fe Indian School – pp. 78–88" },
+                    { category: "Vocabulary", detail: "Unit 6 – pp. 70–79" }
+                ]
+            },
+            {
+                grade: "Grade 9 SAT",
+                stream: "US Program",
+                division: "high-us",
+                marks: "6 Marks • 18 Qs",
+                badgeColor: "bg-blue-100 text-rowad-navy",
+                topics: [
+                    { category: "Literature", detail: "Forgetfulness – Naguib Mahfouz – p. 98" },
+                    { category: "Vocabulary", detail: "Unit 6 – pp. 70–79" }
+                ]
+            },
+            {
+                grade: "Grade 9 IGCSE",
+                stream: "UK Stream",
+                division: "igcse",
+                marks: "10 Marks • Past Paper",
+                badgeColor: "bg-teal-100 text-teal-800",
+                topics: [
+                    { category: "IGCSE Paper", detail: "Exercise 1" },
+                    { category: "IGCSE Paper", detail: "Exercise 2" }
+                ]
+            },
+            {
+                grade: "Grade 10 SAT",
+                stream: "US Program",
+                division: "high-us",
+                marks: "6 Marks • 18 Qs",
+                badgeColor: "bg-blue-100 text-rowad-navy",
+                topics: [
+                    { category: "Literature", detail: "A Plea for Global Education – pp. 65–69" },
+                    { category: "Vocabulary", detail: "Unit 6 – pp. 70–79" }
+                ]
+            },
+            {
+                grade: "Grade 10 IGCSE",
+                stream: "UK Stream",
+                division: "igcse",
+                marks: "10 Marks • Past Paper",
+                badgeColor: "bg-teal-100 text-teal-800",
+                topics: [
+                    { category: "IGCSE Paper", detail: "Exercise 2" },
+                    { category: "IGCSE Paper", detail: "Exercise 4" }
+                ]
+            },
+            {
+                grade: "Grade 11 SAT",
+                stream: "US Program",
+                division: "high-us",
+                marks: "6 Marks • 18 Qs",
+                badgeColor: "bg-blue-100 text-rowad-navy",
+                topics: [
+                    { category: "Grammar", detail: "4.30 Sentence Fragments; 4.31 Run-on Sentences" },
+                    { category: "Vocabulary", detail: "Unit 6 – pp. 70–79" }
+                ]
+            },
+            {
+                grade: "Grade 12 SAT",
+                stream: "US Program",
+                division: "high-us",
+                marks: "6 Marks • 18 Qs",
+                badgeColor: "bg-blue-100 text-rowad-navy",
+                topics: [
+                    { category: "Grammar", detail: "4.26 Adjective Clauses (p. 103); 4.27 Adverb Clauses (p. 105); 4.28 Noun Clauses (p. 107)" },
+                    { category: "Vocabulary", detail: "Unit 7 – p. 88" }
+                ]
+            },
+            {
+                grade: "Grades 11AS & 12A2",
+                stream: "UK A-Level",
+                division: "igcse",
+                marks: "10 Marks • 20 Qs",
+                badgeColor: "bg-teal-100 text-teal-800",
+                topics: [
+                    { category: "Reading", detail: "Unseen Comprehension Passages" }
+                ]
+            }
+        ];
+
+        let currentDivision = 'all';
+
+        // Render Grade Cards
+        function renderGrades() {
+            const container = document.getElementById('grades-container');
+            const emptyState = document.getElementById('empty-search');
+            const searchTerm = document.getElementById('grade-search').value.toLowerCase().trim();
+
+            const filtered = gradeCurriculum.filter(item => {
+                const matchesDivision = currentDivision === 'all' || item.division === currentDivision;
+                const textContent = `${item.grade} ${item.stream} ${item.topics.map(t => t.category + ' ' + t.detail).join(' ')}`.toLowerCase();
+                const matchesSearch = textContent.includes(searchTerm);
+                return matchesDivision && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+            container.innerHTML = filtered.map((item, idx) => {
+                const copyText = `${item.grade} (${item.stream}) - Quarter 2 Quiz Material:\n` + 
+                    item.topics.map(t => `• ${t.category}: ${t.detail}`).join('\n');
+
+                return `
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-start justify-between gap-2 mb-4">
+                                <div>
+                                    <span class="inline-block px-2.5 py-0.5 rounded-md text-[11px] font-bold uppercase tracking-wider ${item.badgeColor} mb-1.5">
+                                        ${item.stream}
+                                    </span>
+                                    <h3 class="font-display font-bold text-xl text-rowad-navy">${item.grade}</h3>
+                                </div>
+                                <button onclick="copyGradeInfo('${encodeURIComponent(copyText)}', '${item.grade}')" 
+                                    title="Copy syllabus details"
+                                    class="p-2 rounded-xl text-slate-400 hover:text-rowad-blue hover:bg-slate-100 transition cursor-pointer no-print">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <div class="space-y-3">
+                                ${item.topics.map(topic => `
+                                    <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                        <span class="text-xs font-bold uppercase tracking-wider text-rowad-teal block mb-0.5">${topic.category}</span>
+                                        <p class="text-sm text-slate-700 leading-snug">${topic.detail}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+
+                        <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                            <span><i class="fa-regular fa-file-lines mr-1.5 text-slate-400"></i>${item.marks}</span>
+                            <span class="text-rowad-blue">Weeks 12–13 Focus</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Filter Division Pills
+        function setDivisionFilter(division) {
+            currentDivision = division;
+            document.querySelectorAll('.filter-pill').forEach(btn => {
+                if (btn.dataset.filter === division) {
+                    btn.className = 'filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-rowad-navy text-white shadow-sm transition cursor-pointer';
+                } else {
+                    btn.className = 'filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition cursor-pointer';
+                }
+            });
+            renderGrades();
+        }
+
+        function filterGrades() {
+            renderGrades();
+        }
+
+        function resetFilters() {
+            document.getElementById('grade-search').value = '';
+            setDivisionFilter('all');
+        }
+
+        // Copy to Clipboard using reliable fallback for iFrames
+        function copyGradeInfo(encodedText, gradeName) {
+            const text = decodeURIComponent(encodedText);
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showToast(`Copied ${gradeName} syllabus to clipboard!`);
+            } catch (err) {
+                showToast('Unable to copy text.');
+            }
+            document.body.removeChild(textArea);
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-msg').textContent = message;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 2600);
+        }
+
+        // Assessment Weighting Interactive View Switcher
+        function setWeightView(mode) {
+            const cardUS = document.getElementById('card-weight-us');
+            const cardUK = document.getElementById('card-weight-uk');
+            const grid = document.getElementById('weight-grid');
+
+            const btns = {
+                both: document.getElementById('btn-compare'),
+                us: document.getElementById('btn-us'),
+                uk: document.getElementById('btn-uk')
+            };
+
+            Object.keys(btns).forEach(key => {
+                if (key === mode) {
+                    btns[key].classList.add('tab-active');
+                    btns[key].classList.remove('text-slate-600');
+                } else {
+                    btns[key].classList.remove('tab-active');
+                    btns[key].classList.add('text-slate-600');
+                }
+            });
+
+            if (mode === 'both') {
+                cardUS.classList.remove('hidden');
+                cardUK.classList.remove('hidden');
+                grid.classList.add('lg:grid-cols-2');
+                grid.classList.remove('max-w-2xl', 'mx-auto');
+            } else if (mode === 'us') {
+                cardUS.classList.remove('hidden');
+                cardUK.classList.add('hidden');
+                grid.classList.remove('lg:grid-cols-2');
+                grid.classList.add('max-w-2xl', 'mx-auto');
+            } else if (mode === 'uk') {
+                cardUS.classList.add('hidden');
+                cardUK.classList.remove('hidden');
+                grid.classList.remove('lg:grid-cols-2');
+                grid.classList.add('max-w-2xl', 'mx-auto');
+            }
+        }
+
+        // Interactive Teacher Checklist Logic
+        function updateChecklist() {
+            const checkboxes = document.querySelectorAll('#checklist-items input[type="checkbox"]');
+            const total = checkboxes.length;
+            let checked = 0;
+
+            checkboxes.forEach(cb => {
+                if (cb.checked) checked++;
+            });
+
+            const percentage = Math.round((checked / total) * 100);
+            document.getElementById('checklist-percent').textContent = `${percentage}% (${checked}/${total})`;
+            document.getElementById('checklist-bar').style.width = `${percentage}%`;
+
+            const banner = document.getElementById('ready-banner');
+            if (checked === total) {
+                banner.classList.remove('hidden');
+            } else {
+                banner.classList.add('hidden');
+            }
+        }
+
+        function resetChecklist() {
+            document.querySelectorAll('#checklist-items input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+            updateChecklist();
+        }
+
+        // Initialize on Load
+        window.addEventListener('DOMContentLoaded', () => {
+            renderGrades();
+        });
+    </script>
+</body>
+</html>
